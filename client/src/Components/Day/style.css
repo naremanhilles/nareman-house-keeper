@@ -1,0 +1,16 @@
+.day-title{
+  font-size: 29px;
+  text-align: center;
+  margin: 10% 0;
+}
+
+.arrow-div{
+  display: grid;
+  color: #095da0;
+  FONT-SIZE: 400%;
+  margin-top: 50%;
+}
+.date{
+  margin-left: 14%;
+  width: 70%;
+}

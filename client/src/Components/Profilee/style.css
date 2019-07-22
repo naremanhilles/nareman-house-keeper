@@ -1,0 +1,11 @@
+.home__submit{
+  background-color: #148ae8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 72%;
+  opacity: 0.9;
+  font-size: 1.6rem;
+  margin-top: 23%;
+  margin-left: 15%;
+}

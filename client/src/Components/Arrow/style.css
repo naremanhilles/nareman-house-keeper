@@ -1,0 +1,27 @@
+.cleaning-type-title{
+  font-size: 1.5rem;
+  margin: 5% 7%;
+}
+.clean-button{
+  background-color: #148ae8;
+  color: white;
+  padding: 4px 19px;
+  margin: 40px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 100%; */
+  opacity: 0.9;
+  font-size: 1.3rem;
+  margin-left: 10%;
+}
+.day{
+  background-color: #095da0;
+}
+.book-paragraph{
+margin-left: 10%;
+}
+.arrow{
+  color: #095da0;
+  FONT-SIZE: 400%;
+  margin-left: 77%;
+}

@@ -1,0 +1,14 @@
+BEGIN;
+
+DROP TABLE IF EXISTS member CASCADE;
+
+
+
+CREATE TABLE member (
+  id SERIAL  PRIMARY KEY,
+  username VARCHAR NOT NULL UNIQUE,
+  mobile VARCHAR
+);
+
+
+COMMIT;

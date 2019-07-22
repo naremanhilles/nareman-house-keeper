@@ -1,0 +1,29 @@
+.ant-carousel .slick-slide img {
+  display: block;
+  border-radius: 7%;
+  width: 80%;
+  margin-left: 10%;
+}
+.home-slider-container h3{
+  margin-top: 11%;
+  font-size: 1rem;
+  font-family: Lato;
+  font-weight: bold;
+  margin-bottom: 16%;
+  text-align: center;
+  }
+  .home-slider-container .ant-carousel .slick-slider{
+    margin-top: 19%;
+  }
+  .home-slider-container .ant-carousel .slick-dots li {
+    margin: 11px 22px !important;
+  }
+ .home-slider-container .ant-carousel .slick-dots li button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background: #2196F3 !important;
+}
+.home-slider-container{
+  margin-top: 22%;
+}

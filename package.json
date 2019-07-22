@@ -1,0 +1,39 @@
+{
+  "name": "nareman-house-keeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "heroku-postbuild": "NODE_ENV=production cd client && npm install && npm run build",
+    "server": "NODE_ENV=development nodemon server/index.js",
+    "client": "npm start --prefix client",
+    "kill": "fuser -k 500/tcp; fuser -k 3000/tcp;",
+    "dev": "run-p server client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naremanhilles/nareman-house-keeper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naremanhilles/nareman-house-keeper/issues"
+  },
+  "homepage": "https://github.com/naremanhilles/nareman-house-keeper#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "font-awesome": "^4.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "npm-run-all": "^4.1.5",
+    "pg": "^7.11.0",
+    "yup": "^0.27.0"
+  }
+}

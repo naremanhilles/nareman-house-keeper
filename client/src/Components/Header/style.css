@@ -1,0 +1,25 @@
+
+.title{
+   font-size: 1rem;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.icon{
+  background-color: #148ae8;
+  color: #eee;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid;
+  border-bottom-color: #148ae8;
+}
+.icon i{
+  font-size: 359%;
+}
+.header{
+display: flex;
+border-bottom: solid;
+border-bottom-width: 4px;
+border-bottom-color: #148ae8;
+}

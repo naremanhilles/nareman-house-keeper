@@ -1,0 +1,27 @@
+.help-parghraph{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 22%;
+  margin-left: auto;
+}
+.help-button{
+  background-color: #148ae8;
+  color: white;
+  padding: 4px 19px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1.4rem;
+  width: 87%;
+  margin-top: 4px 28px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.help-img{
+  width: 69%;
+  transform: scaleX(-1);
+  margin-left: -3%;
+  margin-top: 14%;
+}

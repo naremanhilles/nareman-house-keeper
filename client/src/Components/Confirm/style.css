@@ -1,0 +1,26 @@
+.top-div{
+  background-color:#808080b8;
+  width: 80%;
+  margin-left: 10%;
+}
+.confirm-paragraph{
+  margin-left: 10%;
+}
+.background{
+background-color: #eee;
+}
+.check{
+  margin-left: 15%;
+  margin: 9% 8%
+}
+.confirm-signup__submit{
+
+width: 67%;
+margin-left: 30%;
+}
+.confirm-arrow{
+  color: #095da0;
+  margin-left: 10%;
+  margin-top: -16%;
+  font-size: 279%;
+}
