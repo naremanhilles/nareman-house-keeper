@@ -1,6 +1,6 @@
 const { sign } = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const { checkEmail } = require('../../database/queries/authentication/ checkMobile ');
+const { checkEmail } = require('../../database/queries/authentication/checkMobile');
 
 const { loginSchema } = require('../../helpers/validation-schema');
 

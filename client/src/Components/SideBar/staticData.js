@@ -27,7 +27,7 @@ const elements = [
   },
   {
     id: 3,
-    text: "تسجيل الدخول",
+    text: "خروج",
     icon: logout
   }
 ];

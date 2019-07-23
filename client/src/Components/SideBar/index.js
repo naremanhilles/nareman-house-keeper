@@ -15,6 +15,7 @@ export default class SideBar extends Component {
   };
 
   handleLogout = () => {
+    console.log(111111111111)
     fetch('/api/v1/logout')
       .then(res => res.json())
       .then(res => {
@@ -25,7 +26,7 @@ export default class SideBar extends Component {
           this.props.history.push('/');
         }
       })
-      .catch();
+      .catch(err => console.log(err));
   }
 
 
@@ -38,7 +39,7 @@ export default class SideBar extends Component {
           <div>
             {elements.map(item =>
               <span key={item.id}>
-                {(item.text !== 'Logout') ? (
+                {(item.text !== 'خروج') ? (
                   <NavElement link={item.link} text={item.text}
                     icon={item.icon}
                     handleLinkClick={handleLinkClick} />

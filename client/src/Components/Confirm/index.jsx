@@ -23,7 +23,12 @@ export default class Confirm extends Component {
     const { choos,
       date,
       time, no_hours } = this.props.location.state;
-    this.setState({ nhours: no_hours, time: time, choos: choos });
+    const dateFormate = new Date(date).toUTCString().split(':')[0].split(' ').splice(0, 4).join();
+    const timeFormate = Number(time.split(':')[0]) + no_hours;
+
+    const newTimeFormate = `${timeFormate}:${time.split(':')[1]}`;
+
+    this.setState({ nhours: no_hours, time: time, choos: choos, date: dateFormate, h_to: newTimeFormate });
     if (choos === 'daily') {
       const price = 14 * no_hours;
       const net = price - 10;

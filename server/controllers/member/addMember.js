@@ -1,7 +1,7 @@
 const { sign } = require('jsonwebtoken');
 
 const { addMmeber } = require('../../database/queries/members/addMember');
-const { checkMobile } = require('../../database/queries/authentication/checkMobile ');
+const { checkMobile } = require('../../database/queries/authentication/checkMobile');
 const { checkUsername } = require('../../database/queries/authentication/getUser');
 const { singUpSchema } = require('../../helpers/validation-schema');
 
