@@ -61,7 +61,7 @@ export default class Confirm extends Component {
           history={this.props.history}
           title='حجز مدبرة'
         />
-        <h3 className='day-title'>لقد قمت بحجز طلب التنظيف التالي!</h3>
+        <h3 className='day-title'>لقد قمت بحجز طلب التنظيف التالي</h3>
         <div className='top-div'>
           <p>{this.state.date}</p>
           <p className='confirm-paragraph'>من:<span>{this.state.time}</span></p>
@@ -75,10 +75,11 @@ export default class Confirm extends Component {
           <p className='confirm-paragraph'>المبلغ الاجمالي=<span>{this.state.net}</span>شيكل</p>
         </div>
         <div className='check'>
-          <Checkbox onChange={this.onChange} className=''>أوافق على</Checkbox>
-          <Link to="/service" className="content-signup__word-login">
+
+          <Checkbox onChange={this.onChange} className=''>أوافق على <Link to="/service" className="content-signup__word-login">
             شروط الخدمة
-            </Link>
+            </Link> </Checkbox>
+
         </div>
         <Button
           variant="primary"

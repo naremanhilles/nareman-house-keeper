@@ -15,7 +15,7 @@ export default class Mobile extends Component {
       <>
         <SideNav
           history={this.props.history}
-          title='Home'
+          title='الرئيسية'
         />
         <Switch>
           <Route

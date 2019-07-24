@@ -40,7 +40,7 @@ export default class Hour extends Component {
         />
         <h2 className='day-title'>عدد الساعات</h2>
         <InputNumber min={2} max={6} defaultValue={2} onChange={this.houreonChange} className='date' />
-        <h2 className='day-title'>ساعة البدء:</h2>
+        <h2 className='day-title'>:ساعة البدء</h2>
         <TimePicker use12Hours format="h:mm a" onChange={this.onChange} placeholder="اختاري ساعة" className='date' />
         <div className="arrow-div">
           <Icon type="arrow-right" onClick={this.handleRightArrow} />

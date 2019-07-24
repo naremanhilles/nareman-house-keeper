@@ -88,17 +88,16 @@ export default class Login extends React.Component {
         <Header title="دخول" history={history} />
         <Form className="login__form">
           <p className="content-signup__word-sigup">
-            ادخل رقم هاتفك المحول لتستقبل رمز التأكيد
+            ادخل رقم هاتفك المحمول كي تستقبل رمز التأكيد
           </p>
           <Form.Group>
-            <Form.Label>رقم الهاتف المحمول:
+            <Form.Label>:رقم الهاتف المحمول
             <span className='content-signup__mobile-star'>*</span>
             </Form.Label>
             <Form.Control
               type="text"
               name="mobile"
               value={mobile}
-              placeholder="+970-599000000"
               onChange={this.handleChange}
             />
           </Form.Group>

@@ -21,24 +21,24 @@ export default class Arrow extends Component {
 
     return (
       <>
-        <SideNav
+         <SideNav
           history={this.props.history}
           title='حجز مدبرة'
         />
         <div>
-          <h3 className='cleaning-type-title'>طبيعة التنظيف:</h3>
+          <h3 className='cleaning-type-title'>:طبيعة التنظيف</h3>
           <Buttoncomponent
-            name="تنظيف يومي ( 14 شيكل)"
+            name="(تنظيف يومي (14شيكل"
             onClick={this.handledayClick}
             className='clean-button day'
           />
-          <p className='book-paragraph'>جميع مهام التنظيف اليومية بما في ذلك كنس الأرضيات والغسيل وكي الملابس وتنظيف الحمامات والمطبخ.</p>
+          <p className='book-paragraph'>جميع مهام التنظيف اليومية بما في ذلك كنس الأرضيات والغسيل وكي الملابس وتنظيف الحمامات والمطبخ</p>
           <Buttoncomponent
-            name="تنظيف عميق (17 شيكل)"
+            name="(تنظيف عميق (17شيكل"
             onClick={this.handleheavyClick}
             className='clean-button'
           />
-          <p className='book-paragraph'>التنظيف اليومي بالإضافة إلى تنظيف النوافذ وغسيل السجاد والكنب والستائر.</p>
+          <p className='book-paragraph'>التنظيف اليومي بالإضافة إلى تنظيف النوافذ وغسيل السجاد والكنب والستائر</p>
         </div>
 
         <div className="arrow">

@@ -9,8 +9,10 @@
 .content-signup__word-sigup {
   color: #9E9E9E !important;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 19px;
+    text-align: right;
   text-decoration: none;
+  margin-bottom: 3rem;
 }
 .content-signup__username {
   font-weight: 500;
@@ -49,8 +51,9 @@
   }
 }
 label {
+  float: right;
     display: inline-block;
-    margin-bottom: .5rem;
+    margin-bottom: 12%;
     color: #094371;
     font-size: 1.2rem;
 }

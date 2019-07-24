@@ -30,8 +30,8 @@ export default class Day extends Component {
           history={this.props.history}
           title='حجز مدبرة'
         />
-        <h2 className='day-title'>اختاري اليوم :رزنامة</h2>
-        <DatePicker onChange={this.onChange} className='date' />
+        <h2 className='day-title'>إختاري اليوم</h2>
+        <DatePicker onChange={this.onChange} className='date' placeholder="يوم التنظيف" />
         <div className="arrow-div">
           <Icon type="arrow-right" onClick={this.handleRightArrow} />
           <Icon type="arrow-left" onClick={this.handleLeftArrow} />

@@ -5,6 +5,7 @@ const { checkEmail } = require('../../database/queries/authentication/checkMobil
 const { loginSchema } = require('../../helpers/validation-schema');
 
 module.exports = (req, res, next) => {
+
   const memberInfo = { ...req.body };
   loginSchema
     .validate(memberInfo)

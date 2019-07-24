@@ -97,14 +97,14 @@ export default class SignUp extends Component {
     return (
       <div >
         <Container>
-          <Header title="Sign Up" history={history} />
+          <Header title="إنشاء حساب" history={history} />
           <Form className="content-signup">
             <p className="content-signup__word-sigup">
-              ادخخل اسمك ورقم هاتفك لتستقبل رمز التأكيد
+              ادخل اسمك ورقم هاتفك لكي تستقبل رمز التأكيد
           </p>
             <Form.Group controlId="formBasicUsername">
               <Form.Label>
-                الاسم :{' '}
+                :الاسم{' '}
                 <span className="content-signup__username-star">*</span>
               </Form.Label>
               <Form.Control
@@ -112,13 +112,12 @@ export default class SignUp extends Component {
                 value={username}
                 onChange={this.handleChange}
                 type="username"
-                placeholder="ادخل الاسم"
               />
               {errormsg && <span className="errormsg">{errormsg.username}</span>}
             </Form.Group>
             <Form.Group controlId="formBasicMobile">
               <Form.Label>
-                الهاتف المحمول :{' '}
+                :الهاتف المحمول{' '}
                 <span className="content-signup__mobile-star">*</span>
               </Form.Label>
               <Form.Control
@@ -126,7 +125,6 @@ export default class SignUp extends Component {
                 value={mobile}
                 onChange={this.handleChange}
                 type="text"
-                placeholder="+970-599000000"
               />
               {errormsg && <span className="errormsg">{errormsg.mobile}</span>}
             </Form.Group>

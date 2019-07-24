@@ -11,7 +11,9 @@
   border: none;
   margin-top: 25%;
   margin-left: 10%;
-	padding: 1em 2em;
+  padding: 0.4em -1em;
+  margin-right: 10%;
+  font-family: cairo;
   border: none;
   text-align: center;
   font-weight: bold;

@@ -1,6 +1,14 @@
+
+.arrow{
+  color: #095da0;
+  FONT-SIZE: 400%;
+  margin-left: 77%;
+}
+
 .cleaning-type-title{
   font-size: 1.5rem;
-  margin: 5% 7%;
+  margin-left: 47%;
+  margin-top: 15%;
 }
 .clean-button{
   background-color: #148ae8;
@@ -18,10 +26,7 @@
   background-color: #095da0;
 }
 .book-paragraph{
-margin-left: 10%;
-}
-.arrow{
-  color: #095da0;
-  FONT-SIZE: 400%;
-  margin-left: 77%;
+  font-family: cairo;
+  font-size: 16px;
+  text-align: center;
 }
