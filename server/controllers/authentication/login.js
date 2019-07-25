@@ -1,17 +1,18 @@
 const { sign } = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const { checkEmail } = require('../../database/queries/authentication/checkMobile');
+const { checkMobile } = require('../../database/queries/authentication/checkMobile');
 
 const { loginSchema } = require('../../helpers/validation-schema');
 
 module.exports = (req, res, next) => {
-
   const memberInfo = { ...req.body };
+
   loginSchema
     .validate(memberInfo)
     .then(() => {
-      checkEmail(memberInfo.mobile)
+      checkMobile(memberInfo.mobile)
         .then(({ rows: member }) => {
+
           if (member[0]) {
 
             const { id, username } = { ...member[0] };
@@ -22,9 +23,13 @@ module.exports = (req, res, next) => {
 
           } else next({ code: 400, msg: 'Username does not exist ' });
         })
-        .catch(err => next(err));
+        .catch(err => {
+          next(err)
+
+        });
     })
     .catch((err) => {
+
       next({ code: 400, msg: 'Ensure you enter validly data ' });
     });
 };
